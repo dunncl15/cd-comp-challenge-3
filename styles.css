@@ -1,3 +1,38 @@
 * {
   box-sizing: border-box;
 }
+
+/*** Section Outlines ***/
+
+.top-menu {
+  border: 2px solid red;
+  height: 50px;
+}
+
+.job-overview {
+  border: 2px solid red;
+  height: 100px;
+}
+
+.sidebar-menu {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+.statistics {
+  border: 2px solid red;
+  height: 250px;
+}
+
+.job-description {
+  border: 2px solid red;
+  height: 400px
+}
+
+.social {
+  border: 2px solid red;
+  height: 200px;
+}
