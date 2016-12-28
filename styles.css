@@ -2,37 +2,61 @@
   box-sizing: border-box;
 }
 
-/*** Section Outlines ***/
+/**** Base Styles ****/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  color: #79787F;
+  font-size: 1.25em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border-style: none;
+  width: 100%;
+  padding: 8px 3px;
+}
+
+input[placeholder] {
+  font-size: .75em;
+}
+
+/**** Top Menu Bar - Mobile ****/
 
 .top-menu {
-  border: 2px solid red;
-  height: 50px;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
 }
 
-.job-overview {
-  border: 2px solid red;
-  height: 100px;
+.icon-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
 }
 
-.sidebar-menu {
+.search-bar {
+  flex-grow: 6;
+  border-left: 1px solid lightgrey;
+}
+
+.profile,
+.calendar,
+.grid {
   display: none;
 }
 
-nav {
-  display: none;
-}
-
-.statistics {
-  border: 2px solid red;
-  height: 250px;
-}
-
-.job-description {
-  border: 2px solid red;
-  height: 400px
-}
-
-.social {
-  border: 2px solid red;
-  height: 200px;
+.menu-icon {
+  height: 20px;
+  width: 20px;
 }
