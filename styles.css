@@ -32,6 +32,14 @@ input[placeholder] {
   font-size: .8em;
 }
 
+/**** Sidebar Menu ****/
+
+.sidebar-menu {
+  display: none;
+  background-color: #354052;
+  color: #a6b1c3;
+}
+
 /**** Top Menu Bar - Mobile ****/
 
 .top-menu {
@@ -51,11 +59,32 @@ input[placeholder] {
   border-left: 1px solid #eef2f5;
 }
 
+/*.profile {
+  background-image: url("images/grey-profile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile:hover {
+  background-image: url("images/white-profile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+
 .profile,
 .calendar,
 .grid {
   display: none;
+  border-left: 1px solid #eef2f5;
   cursor: pointer;
+}
+
+.profile:hover,
+.calendar:hover,
+.grid:hover {
+  background-color: #16a4f8;
 }
 
 .menu-icon {
@@ -173,27 +202,34 @@ nav {
   text-transform: uppercase;
 }
 
-.number {
-  color: #5c6375;
-  font-size: 2em;
-  text-align: center;
-}
-
-.circles {
+.circles-vertical {
   display: block;
   height: 400px;
   width: 120px;
   margin: 0 auto;
 }
 
+.circles {
+  display: none;
+  height: 120px;
+  width: 400px;
+  margin: 20px auto;
+}
+
 .applicants {
   margin: 20px auto 0px auto;
 }
+.number {
+  color: #5c6375;
+  font-size: 2em;
+  text-align: center;
+}
 
 .graph {
+  display: none;
   margin: 0 auto;
   width: 400px;
-  height: 250px;
+  height: 193px;
 }
 
 /**** Jobs Section - Mobile ****/
@@ -356,10 +392,65 @@ nav {
 }
 
 .social-post button {
+  display: flex;
+  justify-content: center;
   width: 15%;
   background-color: #46b9c0;
   border-radius: 2px;
   border-style: none;
   color: #fff;
   cursor: pointer;
+}
+
+
+@media screen and (min-width: 468px) {
+
+  .profile,
+  .calendar,
+  .grid {
+    display: flex;
+  }
+
+  .job-overview {
+    padding: 15px 25px;
+  }
+
+  .circles-vertical {
+    display: none;
+  }
+
+  .circles {
+    display: block;
+  }
+
+  .graph {
+    display: block;
+  }
+
+  .number {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .stats-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .jobs-section {
+    display: flex;
+  }
+
+  .job-description {
+    width: 65%;
+  }
+
+  .social-sidebar {
+    width: 35%;
+    margin: 20px 20px 0 20px;
+  }
 }
