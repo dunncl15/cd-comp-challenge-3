@@ -167,6 +167,7 @@ nav {
 .job-description {
   margin: 0 auto;
   width: 95%;
+  border-bottom: 8px solid #f2f2f2;
 }
 
 .job-header th {
@@ -182,7 +183,6 @@ nav {
 .header-content {
   display: flex;
   align-items: center;
-  /*margin: 0 0 0 35px;*/
 }
 
 .edit-btn {
@@ -223,6 +223,10 @@ nav {
   text-align: left;
 }
 
+.job-body:nth-last-child(1) {
+  border-bottom: none;
+}
+
 .col-1 {
   width: 40%;
   font-weight: 600;
@@ -232,4 +236,33 @@ nav {
 .col-2 {
   width: 60%;
   line-height: 1.25;
+}
+
+/**** Social Sidebar - Mobile ****/
+
+.social-sidebar {
+  background-color: #edf2f6;
+}
+
+.social-btn {
+  display: block;
+  width: 80%;
+  margin: 0 auto 15px auto;
+  padding: 15px 0;
+  border-radius: 2px;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.facebook {
+  background-color: #4a6ec2;
+}
+
+.twitter {
+  background-color: #00acee;
+}
+
+.linkedin {
+  background-color: #0381bc;
 }
