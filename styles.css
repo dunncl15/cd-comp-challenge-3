@@ -223,10 +223,6 @@ nav {
   text-align: left;
 }
 
-.job-body:nth-last-child(1) {
-  border-bottom: none;
-}
-
 .col-1 {
   width: 40%;
   font-weight: 600;
@@ -245,14 +241,25 @@ nav {
 }
 
 .social-btn {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 80%;
   margin: 0 auto 15px auto;
-  padding: 15px 0;
+  padding: 15px 20px;
   border-radius: 2px;
   border-style: none;
   color: #fff;
   cursor: pointer;
+  font-size: .75em;
+}
+
+.btn-icon {
+  height: 15px;
+  width: 15px;
+}
+
+.btn-text {
+  margin: 0 auto;
 }
 
 .facebook {
