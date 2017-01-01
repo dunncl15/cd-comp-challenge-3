@@ -51,7 +51,7 @@ input[placeholder] {
 .icon-container {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 15px 25px;
 }
 
 .search-bar {
@@ -59,26 +59,46 @@ input[placeholder] {
   border-left: 1px solid #eef2f5;
 }
 
-/*.profile {
-  background-image: url("images/grey-profile.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.profile {
+  background-image: url("images/grey-profile-small.png");
 }
 
 .profile:hover {
-  background-image: url("images/white-profile.png");
-  background-size: contain;
+  background-image: url("images/white-profile-small.png");
+}
+
+.calendar {
+  background-image: url("images/calendar-icon-small.png");
+}
+
+.calendar:hover {
+  background-image: url("images/white-cal-small.png");
+}
+
+.grid {
+  background-image: url("images/grid-small.png");
+}
+
+.grid:hover {
+  background-image: url("images/white-grid.png");
+}
+
+.profile,
+.profile:hover,
+.calendar,
+.calendar:hover,
+.grid,
+.grid:hover {
+  border-left: 1px solid #eef2f5;
+  cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
-}*/
+}
 
 .profile,
 .calendar,
 .grid {
   display: none;
-  border-left: 1px solid #eef2f5;
-  cursor: pointer;
 }
 
 .profile:hover,
@@ -176,6 +196,23 @@ input[placeholder] {
 
 nav {
   display: none;
+  margin: 35px 0 0 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 25px 0 0;
+  padding: 0 0 25px 0;
+  color: #7c828e;
+  cursor: pointer;
+  font-size: .8em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+nav li:hover {
+  border-bottom: 3px solid #4cb5ef;
+  color: #504f54;
 }
 
 /**** Statistics Section - Mobile ****/
@@ -213,9 +250,10 @@ nav {
   display: none;
   height: 120px;
   width: 400px;
-  margin: 20px auto;
+  margin: 15px auto 40px auto;
 }
 
+.totals,
 .applicants {
   margin: 20px auto 0px auto;
 }
@@ -434,11 +472,29 @@ nav {
 
 @media screen and (min-width: 768px) {
 
+  nav {
+    display: block;
+  }
+
+  .icon-wrap {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
   .stats-section {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+  }
+
+  .graph {
+    max-height: 75%;
+    max-width: 75%;
+  }
+
+  .job-overview {
+    position: relative;
+    padding: 30px 25px 0 25px;
   }
 
   .jobs-section {
