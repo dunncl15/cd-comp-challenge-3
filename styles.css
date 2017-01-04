@@ -280,7 +280,6 @@ nav li:hover {
 
 .job-description {
   margin: 20px auto;
-  border-bottom: 8px solid #f2f2f2;
 }
 
 .job-header th {
@@ -347,7 +346,7 @@ nav li:hover {
   line-height: 1.25;
 }
 
-/**** Social Sidebar - Mobile ****/
+/**** Social Sidebar ****/
 
 .social-sidebar {
   margin: 0 auto;
@@ -404,6 +403,7 @@ nav li:hover {
   padding-left: 5px;
   color: #7c828e;
   font-weight: bold;
+  font-size: .85em;
 }
 
 .social-post p {
@@ -502,11 +502,27 @@ nav li:hover {
   }
 
   .job-description {
-    width: 65%;
+    width: 70%;
   }
 
   .social-sidebar {
-    width: 35%;
+    width: 30%;
     margin: 20px 20px 0 20px;
   }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .wrapper {
+      display: flex;
+    }
+
+    .sidebar-menu {
+      display: block;
+      width: 15%;
+    }
+
+    .main-content {
+      width: 85%;
+    }
 }
