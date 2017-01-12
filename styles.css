@@ -315,10 +315,11 @@ nav li:hover {
   margin: 0 auto;
   padding: 25px 0px;
   background-color: #edf2f6;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 2px solid #e4e9ed;
 }
 
-.stat-btn {
+.stat-btn,
+.mobile-btn {
   display: block;
   margin: 20px auto 10px auto;
   padding: 10px;
@@ -384,12 +385,15 @@ nav li:hover {
   height: 70%;
 }
 
+.btn-wrap {
+  display: none;
+}
+
 /**** Jobs Section - Mobile ****/
 
 .jobs-section {
   margin: 0 auto;
   padding: 25px 0;
-  /*background-color: #edf2f6;*/
 }
 
 .job-description {
@@ -439,9 +443,12 @@ nav li:hover {
   border-bottom: 2px solid #f2f2f2;
 }
 
+.job-body tr:last-child {
+  border-bottom: none;
+}
+
 .job-body td {
   display: flex;
-  align-items: flex-start;
   padding: 20px 10px;
   color: #6f7e95;
   font-size: .75em;
@@ -456,8 +463,18 @@ nav li:hover {
 }
 
 .col-2 {
+  display: flex;
+  align-items: center;
   width: 60%;
   line-height: 1.25;
+}
+
+.headshot {
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin: 0 10px 0 0;
+  border-radius: 50%;
 }
 
 /**** Social Sidebar ****/
@@ -466,6 +483,10 @@ nav li:hover {
   margin: 0 auto;
   width: 90%;
   background-color: #edf2f6;
+}
+
+.social-sidebar .social-post:last-child {
+  border-bottom: none;
 }
 
 .social-btn {
@@ -567,29 +588,23 @@ nav li:hover {
     padding: 15px 25px;
   }
 
+  .stat-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle {
+    height: 125px;
+    width: 125px;
+    margin: 0 10px 0 10px;
+  }
 }
 
 @media screen and (min-width: 667px) {
 
-  .stats-section {
-    align-items: center;
-  }
-
-  .totals {
-    width: 90%;
-  }
-
-  .stat-wrap {
-    display: flex;
-    justify-content: center;
-  }
-
-  .circle {
-    margin: 15px 30px 15px 0;
-  }
-
   .graph {
-    margin: 25px 0 0 0;
+    margin: 25px auto 0 auto;
     width: 90%;
   }
 
@@ -613,6 +628,36 @@ nav li:hover {
     position: absolute;
     top: 20px;
     right: 10px;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+
+  .visuals-wrap {
+    display: flex;
+  }
+
+  .graph {
+    margin: 25px auto 0 auto;
+    width: 40%;
+  }
+
+  .bar-graph {
+    width: 65%;
+    height: 65%;
+  }
+
+  .btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 0 0;
+  }
+
+  .mobile-btn {
+    display: none;
   }
 
   .job-overview {
@@ -651,22 +696,6 @@ nav li:hover {
 
   nav li {
     margin-right: 35px;
-  }
-
-  .stats-section {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .totals {
-    width: 65%;
-  }
-
-  .graph {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 35%;
   }
 
   .bar-graph {
