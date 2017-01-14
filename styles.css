@@ -401,9 +401,11 @@ nav li:hover {
 .arrow-btn {
   position: absolute;
   bottom: -20px;
-  left: 50%;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
+  margin: auto;
   height: 40px;
   width: 40px;
   background-color: #fff;
@@ -696,7 +698,7 @@ nav li:hover {
   }
 
   .totals {
-    width: 65%;
+    width: 60%;
   }
 
   .graph {
@@ -711,12 +713,13 @@ nav li:hover {
 
   .btn-wrap {
     display: flex;
+    justify-content: space-between;
     margin: 5px auto 0 auto;
     width: 95%;
   }
 
   .totals-btn {
-    width: 65%;
+    width: 60%;
   }
 
   .applicants-btn {
