@@ -773,6 +773,8 @@ nav li:hover {
   }
 
   .circle {
+    height: 130px;
+    width: 130px;
     margin: 0 15px;
   }
 
