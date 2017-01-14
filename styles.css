@@ -308,11 +308,12 @@ nav li:hover {
 /**** Statistics Section - Mobile ****/
 
 .stats-section {
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
-  padding: 25px 0px;
+  padding: 50px 0px;
   background-color: #edf2f6;
   border-bottom: 2px solid #e4e9ed;
 }
@@ -397,6 +398,29 @@ nav li:hover {
   display: none;
 }
 
+.arrow-btn {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.arrow {
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+  width: 20px;
+  opacity: .4;
+  transform: rotate(180deg);
+}
+
 /**** Jobs Section - Mobile ****/
 
 .jobs-section {
@@ -405,7 +429,7 @@ nav li:hover {
 
 .job-description {
   margin: 20px auto 40px auto;
-  border-bottom: 3px solid #e7ecef 
+  border-bottom: 3px solid #e7ecef
 }
 
 .job-header th {
@@ -601,10 +625,6 @@ nav li:hover {
 
   .job-overview {
     padding: 15px 25px;
-  }
-
-  .stats-section {
-    padding: 20px 0;
   }
 
   .stat-wrap {
