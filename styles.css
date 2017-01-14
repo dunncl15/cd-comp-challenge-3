@@ -639,7 +639,7 @@ nav li:hover {
   .circle {
     height: 125px;
     width: 125px;
-    margin: 0 7px;
+    margin: 0 10px;
   }
 
   .social-btn-wrap {
@@ -698,7 +698,7 @@ nav li:hover {
   }
 
   .totals {
-    width: 60%;
+    width: 65%;
   }
 
   .graph {
@@ -719,7 +719,7 @@ nav li:hover {
   }
 
   .totals-btn {
-    width: 60%;
+    width: 65%;
   }
 
   .applicants-btn {
