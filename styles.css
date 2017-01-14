@@ -252,7 +252,6 @@ input[placeholder] {
 .open-icon {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin: 0 10px 0 0;
   padding: 5px 15px;
   border: 2px solid #dfe0e2;
@@ -353,15 +352,24 @@ nav li:hover {
 }
 
 .applicants {
-  border-color: #46b9c0;
+  border-top-color: #46b9c0;
+  border-right-color: lightgrey;
+  border-bottom-color: #46b9c0;
+  border-left-color: #46b9c0;
 }
 
 .interviews {
-  border-color: #0381bc;
+  border-top-color: #0381bc;
+  border-right-color: lightgrey;
+  border-bottom-color: lightgrey;
+  border-left-color: #0381bc;
 }
 
 .forwards {
-  border-color: #8468AC;
+  border-top-color: lightgrey;
+  border-right-color: lightgrey;
+  border-bottom-color: #8468AC;
+  border-left-color: lightgrey;
 }
 
 .number {
@@ -392,12 +400,12 @@ nav li:hover {
 /**** Jobs Section - Mobile ****/
 
 .jobs-section {
-  margin: 0 auto;
   padding: 25px 0;
 }
 
 .job-description {
-  margin: 20px auto;
+  margin: 20px auto 40px auto;
+  border-bottom: 3px solid #e7ecef 
 }
 
 .job-header th {
@@ -406,13 +414,16 @@ nav li:hover {
   color: #fff;
   font-size: .8em;
   font-weight: 600;
-  text-align: left;
   text-transform: uppercase;
 }
 
 .header-content {
   display: flex;
   align-items: center;
+}
+
+.header-content p {
+  margin: 0 0 0 10px;
 }
 
 .edit-btn {
@@ -481,12 +492,16 @@ nav li:hover {
 
 .social-sidebar {
   margin: 0 auto;
-  width: 90%;
   background-color: #edf2f6;
 }
 
 .social-sidebar .social-post:last-child {
   border-bottom: none;
+}
+
+.social-btn-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .social-btn {
@@ -604,6 +619,16 @@ nav li:hover {
     width: 125px;
     margin: 0 7px;
   }
+
+  .social-btn-wrap {
+    flex-direction: row;
+  }
+
+  .facebook,
+  .twitter {
+    margin-right: 10px;
+  }
+
 }
 
 @media screen and (min-width: 667px) {
@@ -702,6 +727,10 @@ nav li:hover {
   .social-sidebar {
     width: 30%;
     margin: 20px 20px 0 20px;
+  }
+
+  .social-btn-wrap {
+    flex-direction: column;
   }
 }
 
